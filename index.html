@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0757d5">
+  <meta name="description" content="NEET AARAMBH Biology Test Series 2027 — 50 scheduled chapter, mixed and full-syllabus tests.">
+  <title>NEET AARAMBH | Biology Test Series 2027</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/config.js"></script>
+  <script defer src="assets/js/tests.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+
+<body>
+<header class="header">
+  <a class="brand" href="./" aria-label="NEET AARAMBH Biology home">
+    <span class="logo">NA</span>
+    <span class="brand-copy">
+      <b>NEET AARAMBH</b>
+      <small>BIOLOGY TEST SERIES 2027</small>
+    </span>
+  </a>
+  <a class="support" href="https://t.me/aalok0602"
+     target="_blank" rel="noopener">Support ↗</a>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">NEET 2027 · BIOLOGY TEST SERIES</span>
+      <h1>Learn with purpose.<br><span>Master Biology.</span></h1>
+      <p>32 chapter tests. 8 cumulative mixed tests. 10 full-syllabus mocks.</p>
+
+      <div class="hero-actions">
+        <a class="btn white" href="#tests">Explore Tests ↓</a>
+        <a class="btn outline"
+           href="planner/NEET-AARAMBH-Biology-Test-Series-Planner-2027.pdf"
+           target="_blank" rel="noopener">Complete Planner ↗</a>
+      </div>
+    </div>
+
+    <div class="count-card">
+      <span class="eyebrow">NEXT SCHEDULED TEST</span>
+      <h2 id="nextTitle">Loading schedule…</h2>
+      <p id="nextDate">Checking dates…</p>
+      <div id="countdown" class="countdown">-- : -- : -- : --</div>
+      <p id="countLabel">Days · Hours · Minutes · Seconds · IST</p>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Biology test series overview">
+    <div class="stat-card"><b>50</b><span>Total Tests</span></div>
+    <div class="stat-card"><b>32</b><span>Chapter Tests</span></div>
+    <div class="stat-card"><b>8</b><span>Mixed Tests</span></div>
+    <div class="stat-card">
+      <b>10 AM–10 PM</b>
+      <span>Scheduled Live Window · IST</span>
+    </div>
+  </section>
+
+  <section id="tests" class="tests-section">
+    <div class="section-title">
+      <span class="eyebrow blue">YOUR PREPARATION ROADMAP</span>
+      <h2>Biology Test Series</h2>
+      <p>Search a chapter or test, view the syllabus and attempt uploaded CBTs during or after their scheduled date.</p>
+    </div>
+
+    <div class="test-tools">
+      <input id="testSearch" type="search"
+        placeholder="Search test number, chapter or syllabus…"
+        aria-label="Search tests">
+
+      <div class="filters" role="group" aria-label="Filter tests">
+        <button class="filter active" data-filter="all" aria-pressed="true">All Tests</button>
+        <button class="filter" data-filter="live" aria-pressed="false">Live</button>
+        <button class="filter" data-filter="upcoming" aria-pressed="false">Upcoming</button>
+        <button class="filter" data-filter="previous" aria-pressed="false">Previous</button>
+        <button class="filter" data-filter="chapter" aria-pressed="false">Chapter-wise</button>
+        <button class="filter" data-filter="mixed" aria-pressed="false">Mixed</button>
+        <button class="filter" data-filter="full" aria-pressed="false">Full Mocks</button>
+      </div>
+    </div>
+
+    <div id="testGrid" class="grid" aria-live="polite">
+      <p class="loading">Loading tests…</p>
+    </div>
+  </section>
+
+  <section class="notice">
+    <span class="notice-icon">i</span>
+    <div>
+      <b>Test timing: 10:00 AM–10:00 PM IST</b>
+      <p>Each test goes live on its scheduled date from 10 AM to 10 PM IST. After that window, an uploaded CBT remains available for practice. Upcoming tests stay locked in the website interface.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <b>NEET AARAMBH</b>
+  <span>NEET 2027 · Learn. Practice. Improve.</span>
+  <a href="https://t.me/aalok0602" target="_blank" rel="noopener">Support ↗</a>
+</footer>
+
+<dialog id="syllabusDialog" aria-labelledby="syllabusTitle">
+  <div class="dialog-head">
+    <div>
+      <span class="eyebrow blue">TEST DETAILS</span>
+      <h2 id="syllabusTitle">Test Syllabus</h2>
+    </div>
+    <button id="closeDialog" type="button" aria-label="Close syllabus">×</button>
+  </div>
+
+  <div id="syllabusBody"></div>
+
+  <a class="btn primary planner-link"
+     href="planner/NEET-AARAMBH-Biology-Test-Series-Planner-2027.pdf"
+     target="_blank" rel="noopener">Open Complete Planner ↗</a>
+</dialog>
+
+</body>
+</html>
